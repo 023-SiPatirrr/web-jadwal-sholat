@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#tanggal {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,114,255,0.5);
+}
+
+.jadwal {
+    display: grid;
+    gap: 12px;
+}
+
+.card-waktu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.12);
+    transition: 0.3s;
+}
+
+.card-waktu:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.02);
+}
+
+.card-waktu.active {
+    background: linear-gradient(135deg, #00f5a0, #00d9f5);
+    color: #003b44;
+    font-weight: 600;
+    box-shadow: 0 0 20px rgba(0,255,200,0.6);
+    transform: scale(1.03);
+}
+
+.nama {
+    font-weight: 500;
+}
+
+.waktu {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.loading {
+    text-align: center;
+    opacity: 0.8;
+}
+
+#jamRealtime {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 5px 0;
+}
+
+#tanggal {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.version {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.5;
+    margin: 5px 0;
+}

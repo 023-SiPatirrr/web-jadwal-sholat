@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jadwal Sholat</title>
+<link rel="icon" type="image/png" href="icon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🕌 Jadwal Sholat</h1>
+    <div id="jamRealtime"></div>
+    <p id="tanggal"></p>
+
+    <div class="controls">
+        <select id="kota">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Tasikmalaya">Tasikmalaya</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Yogyakarta">Yogyakarta</option>
+            <option value="Medan">Medan</option>
+        </select>
+        <button id="btnTampil">Tampilkan</button>
+    </div>
+
+    <div class="jadwal" id="hasil">
+        <p class="loading">Memuat jadwal...</p>
+    </div>
+    <br>
+    <p class="version">V 1.1-Simple | Fathir's Studio</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
